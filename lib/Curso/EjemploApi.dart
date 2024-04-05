@@ -15,7 +15,8 @@ class _MyAppState extends State<MyApp> {
 
   late Future<List<Gif>> _listadoGifs;
   Future<List<Gif>> _getGifts() async {
-    final response = await http.get(Uri.parse("https://api.giphy.com/v1/gifs/trending?api_key=Vs2ea9IdEC9yivgVatKo3nb3UKjOfgIg&limit=10&offset=0&rating=g&bundle=messaging_non_clips"));
+    final response = await http.get(
+      Uri.parse("https://api.giphy.com/v1/gifs/trending?api_key=Vs2ea9IdEC9yivgVatKo3nb3UKjOfgIg&limit=10&offset=0&rating=g&bundle=messaging_non_clips"));
 
     List<Gif> gifs = [];
 
